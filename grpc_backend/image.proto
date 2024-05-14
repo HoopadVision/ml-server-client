@@ -1,0 +1,13 @@
+syntax="proto3";
+
+message Request{
+    bytes byte=1;
+}
+
+message Response{
+    string embed=1;
+}
+
+service requestservice{
+    rpc Start(Request) returns(Response){}
+}
